@@ -1,0 +1,41 @@
+@import '~@schibstedspain/sui-theme/lib/index';
+
+.mv-FormSearch {
+  .mv-FormSearch-inner {
+    position: relative;
+  }
+
+  input, button {
+    border: none;
+  }
+
+  input {
+    padding: $p-l;
+    flex-grow: 1;
+    border-top-left-radius: $bdrs-l;
+    border-bottom-left-radius: $bdrs-l;
+    font-size: $fz-m;
+    width: 100%;
+  }
+
+  button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: $c-accent;
+    color: white;
+    border-radius: $bdrs-l;
+    font-variant: all-small-caps;
+    font-weight: $fw-bold;
+    padding: 0 $p-l;
+    transition: 0.25s ease all;
+  }
+
+  .mv-FormSearch-helpText-wrapper {
+    margin-top: $m-s;
+    font-style: italic;
+    color: $c-gray;
+    font-weight: $fw-light;
+  }
+}

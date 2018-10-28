@@ -1,0 +1,99 @@
+@import '~@schibstedspain/sui-theme/lib/index';
+@import '~frontend-mv--uilib-theme/lib/index';
+
+.mv-TopbarPetproject {
+  background: $c-white;
+  padding: $p-l $p-xl;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-top: 3px solid $c-accent;
+
+  .mv-TopbarPetproject-left,
+  .mv-TopbarPetproject-right {
+    display: flex;
+    align-content: center;
+  }
+
+  .mv-TopbarPetproject-right {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $c-white;
+    padding: $p-m;
+    justify-content: space-evenly;
+    border-bottom: 5px solid $c-accent;
+  }
+
+  .mv-TopbarPetproject-logo {
+    margin: 0;
+    color: $c-accent;
+    font-variant: all-small-caps;
+    font-size: $fz-xxl;
+    position: relative;
+  }
+
+  .mv-TopbarPetproject-author {
+    font-size: $fz-m;
+    display: block;
+    font-family: fantasy;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+
+  .mv-TopbarPetproject-mainList {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mv-TopbarPetproject-mainNavItem {
+    list-style: none;
+  }
+
+  .mv-TopbarPetproject-mainNavItemLink {
+    display: block;
+    font-weight: $fw-light;
+    color: $c-black;
+    padding: $p-m;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: $fz-l;
+    letter-spacing: 0.5px;
+
+    &:hover {
+      background: $c-gray-lightest;
+    }
+
+    &.is-selected {
+      color: $c-accent;
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .mv-TopbarPetproject {
+    .mv-TopbarPetproject-right {
+      position: initial;
+      bottom: initial;
+      left: initial;
+      right: initial;
+      display: flex;
+      padding: initial;
+      border-bottom: none;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .mv-TopbarPetproject {
+    .mv-TopbarPetproject-author {
+      bottom: -5px;
+    }
+  }
+}

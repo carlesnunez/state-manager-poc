@@ -1,0 +1,16 @@
+reviewersRaffle:
+  strategies:
+    - knowledge:
+        type: knowledge
+        size: 2
+        users:
+          - carlos-villuendas
+    - ownership-candidates:
+        type: ownership
+        size: 1
+    - sequential-candidates:
+        type: sequential
+        size: 1
+  dailyReminder: enabled
+slack:
+  - "#es-ma-frontend"

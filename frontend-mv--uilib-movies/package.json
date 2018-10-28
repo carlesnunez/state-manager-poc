@@ -1,0 +1,64 @@
+{
+  "name": "@schibstedspain/movies",
+  "version": "1.25.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "directories": {},
+  "scripts": {
+    "co": "sui-mono commit",
+    "check:release": "sui-mono check",
+    "release": "sui-mono release",
+    "lib": "npx rimraf ./lib && babel ./src -d lib",
+    "lint": "sui-lint js --fix",
+    "test": "NODE_ENV=development npm run test:client && NODE_ENV=development npm run test:server",
+    "test:client": "NODE_ENV=development sui-test browser",
+    "test:ci": "NODE_ENV=development sui-test browser --ci && NODE_ENV=development sui-test server",
+    "test:client:watch": "NODE_ENV=development sui-test browser --watch",
+    "test:server": "NODE_ENV=development sui-test server",
+    "test:server:watch": "npm run test:server --watch",
+    "prepublish": "npm run lib",
+    "precommit": "sui-precommit run",
+    "commitmsg": "validate-commit-msg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.schibsted.io:scmspain/frontend-ma--lib-milanuncios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@s-ui/decorators": "1",
+    "@s-ui/domain": "1",
+    "@s-ui/js": "1",
+    "@schibstedspain/tealium-data": "1",
+    "alt": "^0.18.6"
+  },
+  "devDependencies": {
+    "@s-ui/lint": "2",
+    "@s-ui/mockmock": "1",
+    "@s-ui/mono": "1",
+    "@s-ui/precommit": "2",
+    "@s-ui/test": "1",
+    "babel-cli": "6.26.0",
+    "babel-preset-sui": "1.5.0",
+    "babelify": "8.0.0",
+    "husky": "0.13.4",
+    "validate-commit-msg": "2"
+  },
+  "config": {
+    "validate-commit-msg": {
+      "types": "@s-ui/mono/src/types"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "sui"
+    ]
+  }
+}

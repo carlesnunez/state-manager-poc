@@ -1,0 +1,103 @@
+{
+  "ad": {
+    "id": 250473631,
+    "userId": 85198005,
+    "showAds": true,
+    "categoryId": 159,
+    "categoryTree": {
+      "cat1": "10",
+      "cat1_nombre": "Motor",
+      "cat2": "18",
+      "cat2_nombre": "Recambios y accesorios",
+      "cat3": "10",
+      "cat3_nombre": "Otros",
+      "breadcrumb": "Motor>Recambios y accesorios>Otros"
+    },
+    "contactable": true,
+    "usePhoneProxy": false,
+    "highlighted": false,
+    "categoryName": "Otros",
+    "url": "https://pre-2.milanuncios.net/otros-recambios/mando-calefaccion-aire-acondicionado-250473631.htm",
+    "userName": "Desguacescarend",
+    "userType": "Particular",
+    "demanda": false,
+    "title": "MANDO CALEFACCION \/  AIRE ACONDICIONADO",
+    "description": "111415 disponible en stock mando calefaccion \/  aire acondicionado v\u00e1lido para  opel  vectra b berlina 0 con referencia 5399181110 . pieza revisada y garantizado su correcto funcionamiento. posibilidad de env\u00edo 24h. anuncio no contractual.",
+    "firstPhoneNumber": 932932913,
+    "secondPhoneNumber": 634758837,
+    "province": "barcelona",
+    "location": "Vilanova i la Geltr\u00fa",
+    "publishedSinceText": "49 d\u00edas",
+    "photos": [
+      "https:\/\/imgredirect.milanuncios.com\/fg\/2504\/73\/250473631_1.jpg?VersionId=opcpWUQSZPaiaHlMj_gsXMx6XidmTAP2",
+      "https:\/\/imgredirect.milanuncios.com\/fg\/2504\/73\/250473631_2.jpg?VersionId=mU_41fCq8ypNvmWYyqdIVoODH6222BRT"
+    ],
+    "photosThumb": [
+      "https:\/\/imgredirect.milanuncios.com\/fp\/2504\/73\/250473631_1.jpg?VersionId=wMK.6SY1aYU3i2j3PTtGS8sMUrb9DKSC",
+      "https:\/\/imgredirect.milanuncios.com\/fp\/2504\/73\/250473631_2.jpg?VersionId=DP52x7O.m86PVIQuz5AX3pFU.Mv1aBUQ"
+    ]
+  },
+  "stats": {
+    "listings": 1000,
+    "views": 100,
+    "phoneViews": 50,
+    "emailsSent": 51,
+    "favorites": 52,
+    "shares": 53,
+    "autoRenewals": 54,
+    "fullStats": {
+      "ad": {
+        "listedByDay": [
+          {
+            "date": "2018-09-01",
+            "value": 500
+          }
+        ],
+        "listedByMonth": [
+          {
+            "date": "2018-09-01",
+            "value": 500
+          }
+        ],
+        "autoRenewalsByDay": [
+          {
+            "date": "2018-09-01",
+            "value": 54
+          }
+        ],
+        "autoRenewalsByMonth": [
+          {
+            "date": "2018-09-01",
+            "value": 54
+          }
+        ]
+      },
+      "account": {
+        "listedByDay": [
+          {
+            "date": "2018-08-12",
+            "value": 22
+          }
+        ],
+        "listedByMonth": [
+          {
+            "date": "2018-09-01",
+            "value": 0
+          }
+        ],
+        "autoRenewalsByDay": [
+          {
+            "date": "2018-09-01",
+            "value": 10
+          }
+        ],
+        "autoRenewalsByMonth": [
+          {
+            "date": "2018-09-01",
+            "value": 10
+          }
+        ]
+      }
+    }
+  }
+}

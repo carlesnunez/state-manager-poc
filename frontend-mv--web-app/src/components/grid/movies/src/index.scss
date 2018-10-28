@@ -1,0 +1,47 @@
+@import '~@schibstedspain/sui-theme/lib/index';
+@import '~mv-card-movie/lib/index';
+
+.mv-GridMovies {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  > * {
+    width: 100%;
+    margin: $m-s;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .mv-GridMovies {
+    > * {
+      width: 47%;
+      margin: $m-m;
+    }
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .mv-GridMovies {
+    > * {
+      margin: $m-m;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mv-GridMovies {
+    > * {
+      width: 32%;
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .mv-GridMovies {
+    > * {
+      width: 23%;
+    }
+  }
+}

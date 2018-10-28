@@ -1,0 +1,8 @@
+@import '../components/form/search/src/index';
+@import '../components/card/movie/src/index';
+@import './settings';
+
+body {
+  background-color: $bgc-ma-body;
+  margin: 0;
+}

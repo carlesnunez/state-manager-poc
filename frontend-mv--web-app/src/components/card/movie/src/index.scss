@@ -1,0 +1,127 @@
+@import '~@schibstedspain/sui-theme/lib/index';
+
+$lateral-alignment: $p-m;
+$vertical-alignment: $p-m;
+$movieCard-bgc-overlay: rgba(98, 109, 142, .5);
+
+.mv-CardMovie {
+  padding: $p-m;
+
+  .mv-CardMovie-inner {
+    background: $c-white;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    position: relative;
+    border-radius: $bdrs-l;
+
+    &:hover {
+      box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  .mv-CardMovie-mediaWrapper {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  .mv-CardMovie-media {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .mv-CardMovie-mediaOverlay {
+    position: absolute;
+    background: $movieCard-bgc-overlay;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .mv-CardMovie-content {
+    padding: $p-xl $p-xl $p-giant $p-xl;
+  }
+
+  .mv-CardMovie-name,
+  .mv-CardMovie-overview,
+  .mv-CardMovie-date {
+    color: $c-text-base;
+  }
+
+  .mv-CardMovie-name,
+  .mv-CardMovie-overview {
+    letter-spacing: 0.2px;
+    margin: 0;
+  }
+
+  .mv-CardMovie-name {
+    margin: 0;
+  }
+
+  .mv-CardMovie-overview {
+    line-height: $lh-xl;
+    font-style: italic;
+    font-weight: $fw-light;
+    margin-top: $m-m !important;
+  }
+
+  .mv-CardMovie-tags {
+    display: flex;
+    margin: $m-xl 0 0 0;
+    padding: 0;
+    > *:not(:last-child) {
+      margin-right: $m-s
+    }
+  }
+
+  .mv-CardMovie-tag {
+    padding: $p-s $p-m;
+    color: $c-white;
+    font-size: $fz-xxs;
+    background: $c-accent;
+    border-radius: $bdrs-l;
+    list-style: none;
+  }
+
+  .mv-CardMovie-actionButton {
+    background: transparent;
+    color: $c-accent;
+    font-style: italic;
+    border: none;
+    margin: 0;
+    padding: $p-m;
+    position: absolute;
+    bottom: $vertical-alignment;
+    right: $lateral-alignment;
+    font-size: $fz-xs;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .mv-CardMovie {
+    .mv-CardMovie-inner {
+      flex-wrap: nowrap;
+    }
+
+    .mv-CardMovie-mediaWrapper {
+      width: initial;
+      max-width: initial;
+    }
+
+    .mv-CardMovie-media {
+      widtH: initial;
+      max-width: initial;
+      height: 200px;
+    }
+  }
+}
